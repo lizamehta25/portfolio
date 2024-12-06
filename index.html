@@ -5,8 +5,6 @@
 <meta charset="UTF-8">
 <title>Liza's Portfolio</title>
 <style>
-  
-  
   @font-face { 
     font-family: "scrubby"; 
     src: "scrubby.otf"; 
@@ -50,7 +48,20 @@
     <li><a href="#play">Play</a></li>
   </ul>
   
-  <img src="gradient.avif" alt="description of image">
+  <div style="position: relative; width: 100%;">
+    <!-- First (background) image -->
+    <img src="gradient.avif" alt="Green and pink noisy gradient" style="width: 100%; height: auto; display: block;">
+
+    <!-- Second (overlay) image -->
+    <img src="homepic.JPG" alt="Smaller image" style="
+      position: absolute;
+      top: 50%; 
+      left: 7%; 
+      transform: translateY(-50%);
+      width: 400px; 
+      height: auto; 
+      border: 20px solid white;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);">
   
   
   
