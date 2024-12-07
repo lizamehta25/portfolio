@@ -14,13 +14,13 @@
     font-family: "scrubby";
   }
 
-@font-face { 
+  @font-face { 
     font-family: "sfpro"; 
     src: url("SF-Pro-Display-Regular.otf") format("opentype");
-}
+  }
   
   .sfpro { 
-  font-family: "sfpro"; 
+    font-family: "sfpro"; 
   }
   
   ul {
@@ -43,14 +43,12 @@
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-     
   }
 
   li a:hover {
     background-color: lightpink;
   }
 
-  /* Style for the second image */
   .second-image {
     position: absolute;
     top: 40%;
@@ -62,37 +60,49 @@
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
   }
 
-  /* Style specifically for the first h1 */
   .home-h1 {
     position: absolute;
-    top: 20%; /* Align vertically with the second image */
-    left: 850px; /* Adjust to place on the right side of the image */
+    top: 20%; 
+    left: 850px;
     transform: translateY(-50%);
     font-family: "scrubby";
-    font-size: 100px; /* Adjust as needed */
-    color: #333; /* Change color if needed */
+    font-size: 100px; 
+    color: #333;
   }
   
-    .home-h2 {
-  position: absolute;
-  top: 37%; /* Position below h1 */
-  left: 800px; /* 
-  font-family: "sf-pro-reg";
-  font-size: 16px; /* Adjust as needed */
-  text-align: center;
-  font-family: "sfpro";
-  color: #333;
-  max-width: 600px; /* Limit the width for better readability */
-  line-height: 1.5;
-  font-size: 16px
+  .home-h2 {
+    position: absolute;
+    top: 37%;
+    left: 800px;
+    font-family: "sfpro";
+    font-size: 16px;
+    text-align: center;
+    color: #333;
+    max-width: 600px;
+    line-height: 1.5;
   }
+
+  /* Row container for side-by-side images */
+  .row {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    padding: 20px ; 
+    background-color: #fff; /* Add background to separate section if needed */
+  }
+
+  /* Individual image columns */
+  .column {
+    flex: 1; 
+    justify-content: center; 
+    align-items: center; 
+    padding: 10px; 
+  }
+
   
-  
-  
-  
-  
-  
-  
+  .gather { 
+   transform: rotate(90deg);
+  }
 </style>
 </head>
 <body>
@@ -110,10 +120,18 @@
   <!-- Second (overlay) image -->
   <img src="homepic.JPG" alt="Liza on a bridge in British Columbia" class="second-image">
 
-  <!-- Title with a specific class for unique styling -->
+  <!-- Title -->
   <h1 class="home-h1">Liza Mehta</h1>
-  
-  <!-- Secondary heading with a different font -->
-  <h2 class="home-h2">Hey! I’m Liza, a multidisciplinary designer studying Global Business and Digital Arts at the University of Waterloo. I find joy in storytelling through my work. My decisions are rooted in creativity and a desire to make an impact. I specialize in UX, branding, film, and creating communities. I enjoy projects that push me outside of my comfort zone, challenge conventional thinking, and create an impact</h2>
+  <h2 class="home-h2">Hey! I’m Liza, a multidisciplinary designer studying Global Business and Digital Arts at the University of Waterloo. I find joy in storytelling through my work. My decisions are rooted in creativity and a desire to make an impact. I specialize in UX, branding, film, and creating communities. I enjoy projects that push me outside of my comfort zone, challenge conventional thinking, and create an impact.</h2>
+
+  <!-- Row of side-by-side images -->
+  <div class="row">
+    <div class="column">
+      <img src="Pakmen_Icon.png" alt="Gather icon" style="width:400px;">
+    </div>
+    <div class="gather">
+      <img src="Gather_Icon.png" alt="Pakmen icon" style="width:500px; height: 300px";>
+    </div>
+  </div>
 </body>
 </html>
