@@ -14,6 +14,15 @@
     font-family: "scrubby";
   }
   
+  @font-face { 
+    font-family: "sf-pro-reg"; 
+    src: "SFPRODISPLAYREGULAR.otf"; 
+  }
+  
+  .sf-pro-reg {
+    font-family: "sf-pro-reg";
+  }
+  
   ul {
     list-style-type: none;
     margin: 0;
@@ -51,8 +60,8 @@
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
   }
 
-  /* Style for the h1 element */
-  h1 {
+  /* Style specifically for the first h1 */
+  .home-h1 {
     position: absolute;
     top: 20%; /* Align vertically with the second image */
     left: 800px; /* Adjust to place on the right side of the image */
@@ -61,6 +70,23 @@
     font-size: 100px; /* Adjust as needed */
     color: #333; /* Change color if needed */
   }
+  
+    .home-h2 {
+    position: absolute;
+    top: 75%; /* Align vertically with the second image */
+    left: 800px; /* Adjust to place on the right side of the image */
+    transform: translateY(-50%);
+    font-family: "sf-pro-reg";
+    font-size: 16px; /* Adjust as needed */
+    color: #333; /* Change color if needed */
+  }
+  
+  
+  
+  
+  
+  
+  
 </style>
 </head>
 <body>
@@ -78,7 +104,10 @@
   <!-- Second (overlay) image -->
   <img src="homepic.JPG" alt="Liza on a bridge in British Columbia" class="second-image">
 
-  <!-- Title positioned to the right of the second image -->
-  <h1 class="scrubby">Liza Mehta</h1>
+  <!-- Title with a specific class for unique styling -->
+  <h1 class="home-h1">Liza Mehta</h1>
+  
+  <!-- Secondary heading with a different font -->
+  <h2 class="home-h2">Hey! I’m Liza, a multidisciplinary designer studying Global Business and Digital Arts at the University of Waterloo. I find joy in storytelling through my work. My decisions are rooted in creativity and a desire to make an impact. I specialize in UX, branding, film, and creating communities. I enjoy projects that push me outside of my comfort zone, challenge conventional thinking, and create an impact</h2>
 </body>
 </html>
