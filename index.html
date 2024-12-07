@@ -87,20 +87,17 @@
   display: flex; 
   justify-content: center; /* Center horizontally */
   align-items: flex-start; /* Align images at the top edge */
-  gap: 20px; /* Add space between images */
-  padding: 20px; 
-  background-color: #fff;
+  gap: 10px; /* Add space between images */
+  padding: 10px; 
+
 }
 
 .column {
   padding: 10px; 
-  text-align: center; 
+  justify-content: center; 
 }
 
-.gather img {
-  transform: rotate(90deg); /* Keep the image vertical */
-  display: block; /* Prevent inline rendering issues */
-}
+
 </style>
 </head>
 <body>
@@ -127,9 +124,8 @@
   <div class="column">
 <div class="row">
   <div class="column">
-    <img src="Pakmen_Icon.png" alt="Pakmen icon" style="width:400px;">
+    <img src="Pakmen_Icon.png" alt="Pakmen icon" style="width:500px;">
   </div>
   <div class="column">
-    <img src="Gather_Icon.png" alt="Gather icon" style="width:500px; height:300px;" class="gather">
+    <img src="Gather_Icon.png" alt="Gather icon" style="width:600px; height:300px;">
   </div>
-</div>
