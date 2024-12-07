@@ -83,26 +83,24 @@
   }
 
   /* Row container for side-by-side images */
-  .row {
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
-    padding: 20px ; 
-    background-color: #fff; /* Add background to separate section if needed */
-  }
+.row {
+  display: flex; 
+  justify-content: center; /* Center horizontally */
+  align-items: flex-start; /* Align images at the top edge */
+  gap: 20px; /* Add space between images */
+  padding: 20px; 
+  background-color: #fff;
+}
 
-  /* Individual image columns */
-  .column {
-    flex: 1; 
-    justify-content: center; 
-    align-items: center; 
-    padding: 10px; 
-  }
+.column {
+  padding: 10px; 
+  text-align: center; 
+}
 
-  
-  .gather { 
-   transform: rotate(90deg);
-  }
+.gather img {
+  transform: rotate(90deg); /* Keep the image vertical */
+  display: block; /* Prevent inline rendering issues */
+}
 </style>
 </head>
 <body>
@@ -114,7 +112,7 @@
 
   <div style="position: relative; width: 100%;">
     <!-- First (background) image -->
-    <img src="gradient.avif" alt="Green and pink noisy gradient" style="width: 100%; height: 900px; display: block;">
+    <img src="gradient.avif" alt="Green and pink noisy gradient" style="width: 100%; height: 700px;">
   </div>
 
   <!-- Second (overlay) image -->
@@ -125,13 +123,13 @@
   <h2 class="home-h2">Hey! I’m Liza, a multidisciplinary designer studying Global Business and Digital Arts at the University of Waterloo. I find joy in storytelling through my work. My decisions are rooted in creativity and a desire to make an impact. I specialize in UX, branding, film, and creating communities. I enjoy projects that push me outside of my comfort zone, challenge conventional thinking, and create an impact.</h2>
 
   <!-- Row of side-by-side images -->
-  <div class="row">
-    <div class="column">
-      <img src="Pakmen_Icon.png" alt="Gather icon" style="width:400px;">
-    </div>
-    <div class="gather">
-      <img src="Gather_Icon.png" alt="Pakmen icon" style="width:500px; height: 300px";>
-    </div>
+<div class="row">
+  <div class="column">
+<div class="row">
+  <div class="column">
+    <img src="Pakmen_Icon.png" alt="Pakmen icon" style="width:400px;">
   </div>
-</body>
-</html>
+  <div class="column">
+    <img src="Gather_Icon.png" alt="Gather icon" style="width:500px; height:300px;" class="gather">
+  </div>
+</div>
