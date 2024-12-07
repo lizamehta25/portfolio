@@ -7,27 +7,27 @@
 <style>
   @font-face { 
     font-family: "scrubby"; 
-    src: "scrubby.otf"; 
+    src: url("scrubby.otf") format("opentype"); 
   }
   
   .scrubby {
     font-family: "scrubby";
   }
+
+@font-face { 
+    font-family: "sfpro"; 
+    src: url("SF-Pro-Display-Regular.otf") format("opentype");
+}
   
-  @font-face { 
-    font-family: "sf"; 
-    src: "SF-Pro-Display-Regular.otf"; 
-  }
-  
-  .sf-pro-reg {
-    font-family: "sf-pro-reg";
+  .sfpro { 
+  font-family: "sfpro"; 
   }
   
   ul {
+    font-family: "sfpro"; 
     list-style-type: none;
     margin: 0;
     padding: 0;
-    font-family: "sf";
     overflow: hidden;
     display: flex; /* Use flexbox */
     justify-content: center; /* Center horizontally */
@@ -80,7 +80,7 @@
   font-family: "sf-pro-reg";
   font-size: 16px; /* Adjust as needed */
   text-align: center;
-  font-family: "sf";
+  font-family: "sfpro";
   color: #333;
   max-width: 600px; /* Limit the width for better readability */
   line-height: 1.5;
