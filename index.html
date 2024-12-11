@@ -5,6 +5,32 @@
 <meta charset="UTF-8">
 <title>Liza's Portfolio</title>
 <style>
+  
+  /* unvisited link */
+a:link {
+      font-family: "sfpro";
+      color: grey;
+      font-size: 18px
+}
+
+/* visited link */
+a:visited {
+      font-family: "sfpro";
+      color: grey;
+      font-size: 18px
+}
+
+/* mouse over link */
+a:hover {
+      font-family: "sfpro";
+      color: #FE90CC;
+      font-size: 18px
+}
+
+/* selected link */
+a:active {
+  color: blue;
+}
   @font-face { 
     font-family: "scrubby"; 
     src: url("scrubby.otf") format("opentype"); 
@@ -45,9 +71,6 @@
     text-decoration: none;
   }
 
-  li a:hover {
-    background-color: lightpink;
-  }
 
   .second-image {
     position: absolute;
@@ -133,8 +156,8 @@
 </head>
 <body>
   <ul>
-    <li><a class="active" href="#home">HOME</a></li>
-    <li><a href="#about">ABOUT</a></li>
+    <li><a class="active" href="https://lizamehta25.github.io/portfolio/">HOME</a></li>
+    <li><a href="https://lizamehta25.github.io/about-page/">ABOUT</a></li>
     <li><a href="#play">PLAY</a></li>
   </ul>
 
