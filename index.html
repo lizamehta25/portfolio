@@ -6,6 +6,25 @@
 <title>Liza's Portfolio</title>
 <style>
   
+  .footer-links {
+  display: flex; /* Arrange items horizontally */
+  justify-content: left; /* Center the items */
+  gap: 20px; /* Add space between the items */
+  position: absolute; /* Position the links above the footer image */
+  top: 1650px; /* Position them slightly above the footer image */
+  left: 37px; 
+  width: 100%; /* Ensure the footer links span thefull width */
+  z-index: 10; /* Make sure the links appear above the footer image */
+}
+
+.footer-image {
+  width: 100vw; /* Makes the image span the entire width of the viewport */
+  height: auto; /* Maintains the aspect ratio */
+  display: block; /* Removes any extra space caused by inline images */
+  margin: 0; /* Removes default margins */
+  margin-top: 30px; 
+  padding: 0; /* Removes any padding */
+}
   /* unvisited link */
 a:link {
       font-family: "sfpro";
@@ -173,7 +192,7 @@ a:active {
   
       <img src="TAPE.png" alt="" class="tapetop">
         <img src="TAPE.png" alt="" class="tapebottom">
-
+<
   <!-- Title -->
   <h1 class="home-h1">Liza Mehta</h1>
   <h2 class="home-h2">Hey! I’m Liza, a multidisciplinary designer studying Global Business and Digital Arts at the University of Waterloo. I find joy in storytelling through my work. My decisions are rooted in creativity and a desire to make an impact. I specialize in UX, branding, film, and creating communities. I enjoy projects that push me outside of my comfort zone, challenge conventional thinking, and create an impact.</h2>
@@ -183,8 +202,19 @@ a:active {
   <div class="column">
 <div class="row">
   <div class="column">
-    <img src="Pakmen_Icon.png" alt="Pakmen icon" style="width:500px;">
+    <a href="https://lizamehta25.github.io/Pakmen-Project/"><img src="Pakmen_Icon.png" alt="Pakmen icon" style="width:500px;"></a>
   </div>
   <div class="column">
     <img src="Gather_Icon.png" alt="Gather icon" style="width:600px; height:300px;">
   </div>
+    </div>
+  </div>
+  </div>
+  <img src="Footer.png" alt="description of image" class="footer-image">
+<div class="footer-links">
+  <h4 class="h4"><a href="https://x.com/leezaofc" target="_blank">TWITTER</a></h4>
+    
+  <h4 class="h4"><a href="https://www.linkedin.com/in/liza-mehta-45bb851b6/">LINKEDIN</a></h4>
+  <h4 class="h4"><a href="https://drive.google.com/file/d/1nLPNY6S1G-0NWOJ6H0xOOF2L0bOOzVEj/view?usp=sharing">RESUME</a></h4>
+  </body>
+</html>
